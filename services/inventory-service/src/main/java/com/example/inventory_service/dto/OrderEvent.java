@@ -1,4 +1,4 @@
-package com.example.stock_service.dto;
+package com.example.inventory_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

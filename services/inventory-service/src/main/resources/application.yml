@@ -4,9 +4,9 @@ spring:
       - localhost:9092
     consumer:
       auto-offset-reset: earliest
-      group-id: stock
+      group-id: inventory
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         schema.registry.url: http://localhost:9095
-        json.value.type: com.example.stock_service.dto.OrderEvent
+        json.value.type: com.example.inventory_service.dto.OrderEvent

@@ -5,6 +5,7 @@ spring:
         - localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: io.confluent.kafka.serializers.json.KafkaJsonSchemaSerializer
-
+      properties:
+        schema.registry.url: http://localhost:9095
     topic:
       name: "order_topic"
